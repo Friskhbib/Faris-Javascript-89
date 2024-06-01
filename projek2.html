@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Peminjaman Buku Perpustakaan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(bg2.jpg);">
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid justify-content-start">
+            <center>
+        
+        <a style="background-color: black;" href="home.html" class="button-link btn btn-outline-success me-2" type="button"> Home</button></a>
+        <a style="background-color: black;" href="index.html" class="button-link btn btn-outline-success me-2" type="button"> Projek 1</button></a> 
+        <a style="background-color: black;" href="projek2.html" class="button-link btn btn-outline-success me-2" type="button"> Projek 2</button></a> 
+        </form>
+      </nav>
+    <div class="container">
+        <div class="container mt-5">
+            <div class="card p-4">
+    <div class="container mt-5">
+        <h2 class="text-center">Aplikasi Peminjaman Buku Perpustakaan</h2>
+        <form id="formPeminjaman">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nama">Nama Peminjam</label>
+                    <input type="text" class="form-control" id="nama" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="umur">Umur</label>
+                    <input type="number" class="form-control" id="umur" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" class="form-control" id="alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="jenisKelamin">Jenis Kelamin</label>
+                <select class="form-control" id="jenisKelamin" required>
+                    <option value="">Pilih</option>
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="buku">Buku yang Dipinjam</label>
+                <input type="text" class="form-control" id="buku" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="tambahPeminjam()">Pinjam</button>
+            <button type="reset" class="btn btn-secondary" onclick="resetTable()">Reset</button>
+        </form>
+        <h3 class="text-center mt-5">Data Peminjam</h3>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Umur</th>
+                    <th scope="col">Alamat</th>
+                    <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">Buku yang Dipinjam</th>
+                </tr>
+            </thead>
+            <tbody id="tabelPeminjam">
+                <!-- Data Peminjam akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div></div></div></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

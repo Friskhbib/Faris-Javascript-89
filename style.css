@@ -1,0 +1,42 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2, h3 {
+    color: #343a40;
+}
+
+.table {
+    background-color: #fff;
+}
+
+
+body {
+    background-color: #f3f3f3;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+}
+
+#question {
+    font-size: 1.5em;
+}
+
+.btn-group-vertical .btn {
+    margin-bottom: 10px;
+}
+body {
+    background-color: #f3f3f3;
+}
+
+.box {
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+}
